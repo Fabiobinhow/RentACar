@@ -5,6 +5,8 @@
  */
 package ooc.enums;
 
+import ooc.yoursolution.RentACarInterface;
+
 /**
  * THIS IS SOME LEGACY CODE THAT IS PART OF THE SYSTEM AND YOU HAVE TO USE IT.
  * This enum models all the possible makes that a car could be.
@@ -12,6 +14,7 @@ package ooc.enums;
  * @author apont
  */
 public enum Make {
+   
     
     TOYOTA, 
     FIAT,

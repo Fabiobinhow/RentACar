@@ -8,6 +8,7 @@ import java.io.IOException;
  * This is one of the interfaces you need to implement
  *
  */
+
 public interface BookingSystemInterface {
     
     /**
@@ -19,6 +20,7 @@ public interface BookingSystemInterface {
      * @return instance of the Rent-a-car class.
      * @throws IOException 
      */
+    
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException;
     
 }

@@ -3,6 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+// INCLUDE HERE THE LINK TO THE GIT REPOSITORY AS A COMMENT!!!!
+// https://github.com/Fabiobinhow/RentACar.git
+
+
+// INCLUDE HERE THE FULL NAME AND STUDENT NUMBER OF BOTH TEAM MEMBERS 
+// Edgard Pacheco da Silva - Student ID: 2020223
+// Fabio Teixeira Ramos - Student ID: 2020367
 package ooc.yoursolution;
 
 import java.util.List;

@@ -16,21 +16,11 @@ import java.util.Map;
  */
 public interface CarInterface {
     
-    /**
-     * This method in in charge of creating the calendar of availability 
-     * of the car for the whole year. 
-     * The calendar should be a Map that uses the Month as the key, 
-     * and an array of boolean as its associated value.
-     * 
-     * @return Map of availability
-     */
+    
     public Map<Month, boolean[]> createAvailability();
     
-    /**
-     * Getter method for the make of this car.
-     * 
-     * @return the make of the car
-     */
+    
+    
     public Make getMake();
     
     /**

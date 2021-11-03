@@ -15,24 +15,31 @@ public class BookingSystem implements BookingSystemInterface {
     @Override
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
 
-        String st, name;
+        String data_file, store;
+        double rate; // Varible rate 
+        int amount; // amount of car 
+        
+        //Creating Array for cars
         List<Car> cars = new ArrayList<>();
-        name = in.readLine();
+        
+        store = in.readLine(); // getting the first line ( name of store)
 
-        while ((st = in.readLine()) != null) {
-            String s[] = st.split(":");
+        // While to split all the txt file 
+        while ((data_file = in.readLine()) != null) {
+            String s[] = data_file.split(":");
 
-            Make make = Make.valueOf(s[0]);
-            double rate = Double.parseDouble(s[1]);
-            int numCars = Integer.parseInt(s[2]);
+            
+            Make make = Make.valueOf(s[0]); // getting the brand of the car 
+            rate = Double.parseDouble(s[1]); //  getting the rate of the car 
+            amount = Integer.parseInt(s[2]); //  getting amount avaible of the car 
 
-            for (int i=0; i<numCars; i++) {
+            for (int i=0; i<amount; i++) {
                 Car car = new Car(i, make, rate);
                 cars.add(car);
             }
         }
 
-        RentACarInterface rentACarInterface = new RentACar(cars, name);
+        RentACarInterface rentACarInterface = new RentACar(cars, store);
         return rentACarInterface;
     }
 }

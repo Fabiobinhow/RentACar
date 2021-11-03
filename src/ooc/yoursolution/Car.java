@@ -6,7 +6,6 @@ import ooc.enums.*;
 import ooc.yoursolution.CarInterface;
 
 
-
 public class Car implements CarInterface {
 
     private int id;

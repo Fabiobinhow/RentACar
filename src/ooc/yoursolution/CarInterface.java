@@ -14,6 +14,9 @@ import java.util.Map;
  * 
  * @author apont
  */
+
+
+// Fabio >
 public interface CarInterface {
     
     
@@ -64,6 +67,10 @@ public interface CarInterface {
      * 
      * @return 
      */
+    
+    
+    // Fabio <
+    
     public int getId();
     
     /**

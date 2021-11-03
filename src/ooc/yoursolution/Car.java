@@ -11,16 +11,17 @@ public class Car implements CarInterface {
     private int id;
     private Make make;
     private double rate;
-    private Map<Month, Boolean[]> map;
+    private Map<Month, Boolean[]> map; // fabio
 
     public Car(int id, Make make, double rate) {
         this.id = id;
         this.make = make;
         this.rate = rate;
-        createAvailability();
+        createAvailability(); // fabio copiar 
+        
     }
 
-    @Override
+    @Override // fabio
     public Map createAvailability() {
         map = new HashMap<>();
 
@@ -40,7 +41,7 @@ public class Car implements CarInterface {
         return map;
     }
 
-    @Override
+    @Override // edgard
     public Make getMake() {
         return make;
     }
@@ -61,21 +62,21 @@ public class Car implements CarInterface {
     }
 
     @Override
-    public Map getAvailability() {
+    public Map getAvailability() { // fabio
         return map;
     }
 
     @Override
-    public void setAvailability(Map availability) {
+    public void setAvailability(Map availability) { // fabio 
         this.map = map;
     }
 
     @Override
-    public int getId() {
+    public int getId() { 
         return id;
     }
 
-    @Override
+    @Override // fabio
     public boolean isAvailable(Month month, int day) {
         Boolean[] availability = map.get(month);
         if (availability[day-1] == null) {

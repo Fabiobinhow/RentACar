@@ -33,7 +33,9 @@ public class RentACar implements RentACarInterface {
     public void setName(String name) {
         this.name = name;
     }
-
+ 
+    //  COPIAD DAQUI PRA BAIXO 
+    
     @Override
     public boolean checkAvailability(Month month, int day, Make make, int lengthOfRent) {
         int currentDay, flag;
